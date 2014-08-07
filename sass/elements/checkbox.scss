@@ -1,0 +1,56 @@
+.checkbox{
+	label {  
+		display: inline-block;  
+		cursor: pointer;  
+		position: relative;   
+		font-size: $font-size-small;
+		line-height: 16px;
+	}
+	label:before {  
+        color: $gray-light;
+	    content: "c";
+	    font-family: 'shoplo';
+	    font-size: 16px;
+	    font-weight: normal;
+	    line-height: 1;
+	    position: relative;
+	    text-transform: lowercase;
+	    top:2px;
+    }  
+	input[type=checkbox]:checked + label:before {  
+		color: $gray;
+	    content: "\'";
+	    background-color:$green-light;
+	} 
+	input[type=checkbox] {  
+		display: none;  
+	} 
+}
+
+.radio{
+	label {  
+		display: inline-block;  
+		cursor: pointer;  
+		position: relative;   
+		font-size: $font-size-small;
+		line-height: 16px;
+	}
+	label:before {  
+        color: $gray-light;
+	    content: "v";
+	    font-family: 'shoplo';
+	    font-size: 16px;
+	    font-weight: normal;
+	    line-height: 1;
+	    position: relative;
+	    text-transform: lowercase;
+	    top:2px;
+    }  
+	input[type=radio]:checked + label:before {  
+		color: $dark;
+	    content: "v";
+	} 
+	input[type=radio] {  
+		display: none;  
+	} 
+} 

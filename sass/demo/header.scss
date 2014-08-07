@@ -1,0 +1,25 @@
+#header{
+	width: 100%;
+	background: $gray-dark;
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			float: left;
+			margin: 0 5px;
+			a{
+				padding: 10px 20px;
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				font-size: $font-size-small;
+				font-weight: 400;
+				@include transition(0.2s);
+				&:hover{
+					color: rgba(#fff,.8);
+				}
+			}
+		}
+	}
+}

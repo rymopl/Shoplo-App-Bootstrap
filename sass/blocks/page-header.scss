@@ -1,0 +1,29 @@
+.page-header{
+	padding:35px 30px;
+	.search-form{
+		position: relative;
+		input[type="search"]{
+			border:1px solid red;
+			padding: 4px 6px 4px 32px;
+			line-height: 24px;
+			color: #484b58;
+			border: 1px solid $gray-light;
+			@include radius(2);
+			width: 160px;
+		}
+		&:before{
+			@extend .glyphicon;
+			content: ':';
+			position: absolute;
+			color: #dde0e8;
+			top:9px;
+			left:8px;
+		}
+	}
+	.filters{
+		margin-bottom: -7px;
+		div,a{
+			margin-bottom: 7px;
+		}
+	}
+}

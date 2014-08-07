@@ -1,0 +1,54 @@
+.app-container{
+	@include container-fixed();
+	@media (min-width: $break-sm-min) {
+    	width: $container-sm;
+	}
+	@media (min-width: $break-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $break-lg-min) {
+		width: $container-lg;
+	}
+}
+.app-row{
+	@include create-app-row();
+}
+
+.app-span-1{
+	@include create-app-span(1)
+}
+.app-span-2{
+	@include create-app-span(2)
+}
+.app-span-3{
+	@include create-app-span(3)
+}
+.app-span-4{
+	@include create-app-span(4)
+}
+.app-span-5{
+	@include create-app-span(5)
+}
+.app-span-6{
+	@include create-app-span(6)
+}
+.app-span-7{
+	@include create-app-span(7)
+}
+.app-span-8{
+	@include create-app-span(8)
+}
+.app-span-9{
+	@include create-app-span(9)
+}
+.app-span-10{
+	@include create-app-span(10)
+}
+.app-span-11{
+	@include create-app-span(11)
+}
+.app-span-12{
+	@include create-app-span(12)
+}
+
+

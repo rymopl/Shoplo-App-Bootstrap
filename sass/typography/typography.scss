@@ -1,0 +1,71 @@
+@import 'font';
+@import 'glyphicons';
+
+//Headings
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+	small{
+		color: $gray-light;
+		font-weight:600;
+		font-size:75%;
+	}
+}
+h1 {
+  font-size: $font-size-h1;
+  margin: 0.67em 0; 
+  &.page-title{
+	  @include font-size(22);
+	  margin: 0;
+  }
+}
+
+h2 {
+  font-size: $font-size-h2;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: $font-size-h3;
+  margin: 1em 0;
+  &.section-title{
+	  @include font-size(14);
+	  margin: 0 0 20px;
+  } 
+}
+
+h4 {
+  font-size: $font-size-h4;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: $font-size-h5;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: $font-size-h6;
+  margin: 2.33em 0; }
+
+//Paragraph
+p{
+	font-size: $font-size-base;
+	line-height: 20px;
+	margin: 0 0 10px;
+}
+
+//helpers
+.label{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:$font-size-small;
+	margin-bottom: 25px;
+};
+.app-table-look{
+	h2{
+		font-size:$font-size-large;
+	}
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }

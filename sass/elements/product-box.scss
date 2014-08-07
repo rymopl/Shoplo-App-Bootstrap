@@ -1,0 +1,17 @@
+.product-box{
+	padding: 15px;
+	border: 1px solid $gray-light;
+	min-height: 260px;
+	margin-bottom: 15px;
+	img{
+		max-height: 150px;
+		max-width: 150px;
+		display: block;
+		margin: 0 auto 15px;
+	}
+	p{
+		font-size: $font-size-xsmall;
+		text-transform: uppercase;
+		margin: 10px auto 0;
+	}
+}

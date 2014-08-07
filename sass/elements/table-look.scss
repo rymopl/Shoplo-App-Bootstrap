@@ -1,0 +1,35 @@
+.app-table-look{
+	border: 1px solid  $gray-light;
+	.app-table-tr{
+		border-bottom:1px solid $gray-light;
+		&:last-child{
+			border:0;
+		}
+		.app-table-td{
+			padding-top: 25px;
+			padding-bottom: 25px;
+			border-bottom:1px solid $gray-light;
+			border-left:1px solid $gray-light;
+			&:last-child{
+				border-bottom:0;
+			}
+		}
+	}
+	.app-table-horizontal{
+		.app-table-td:first-child{
+			border: 0;
+		}
+	}
+	.section-header{
+		padding-top:25px;
+		h2{
+			font-size: 18px;
+			margin: 0 0 5px;
+		}
+		p{
+			color: #a7a7a7;
+			font-size: 13px;
+			margin-bottom: 10px;
+		}
+	}
+}

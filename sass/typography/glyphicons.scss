@@ -1,0 +1,123 @@
+.glyphicon{
+	display: inline-block;
+	line-height: 1em;
+	font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-transform: lowercase;
+    top: 1px;
+    font-family: 'shoplo' !important;
+}
+.btn{
+	.glyphicon{
+		@include font-size(16);
+		left: -2px;
+		top:2px;
+		font-weight: normal;
+	}
+}
+.icon-label:before{
+	content: 'a';
+}
+.icon-list:before{
+	content: 'b';
+}
+.icon-square:before{
+	content: 'c';
+}
+.icon-box:before{
+	content: 'd';
+}
+.icon-car:before{
+	content: 'e';
+}
+.icon-house:before{
+	content: 'f';
+}
+.icon-heart:before{
+	content: 'g';
+}
+.icon-shop:before{
+	content: 'h';
+}
+.icon-sun:before{
+	content: 'i';
+}
+.icon-user:before{
+	content: 'j';
+}
+.icon-question:before{
+	content: 'k';
+}
+.icon-cloud:before{
+	content: 'l';
+}
+.icon-plus:before{
+	content: 'm';
+}
+.icon-note:before{
+	content: 'n';
+}
+.icon-envelope:before{
+	content: '9';
+}
+.icon-grid:before{
+	content: 'p';
+}
+.icon-callendar:before{
+	content: 'r';
+}
+.icon-exit:before{
+	content: 's';
+}
+.icon-browser:before{
+	content: 't';
+}
+.icon-creditcard:before{
+	content: 'w';
+}
+.icon-checkbox:before{
+	content: 'x';
+}
+.icon-briefcase:before{
+	content: 'y';
+}
+.icon-clock:before{
+	content: 'z';
+}
+.icon-radio-button:before{
+	content: 'v';
+}
+.icon-tooltip:before{
+	content: 'q';
+}
+.icon-lock:before{
+	content: ',';
+}
+.icon-checked:before{
+	content: " ' ";
+}
+.icon-trash:before{
+	content: '\\';
+}
+.icon-spyglass:before{
+	content: ':';
+}
+.icon-mobile:before{
+	content: '[';
+}
+.icon-location:before{
+	content: ']';
+}
+.icon-cart:before{
+	content: '7';
+}
+.icon-link:before{
+	content: '$';
+}
+.icon-camera:before{
+	content: '^';
+}
+.icon-ex:before{
+	content: '!';
+}

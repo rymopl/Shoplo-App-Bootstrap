@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'mixins/mixins';
+@import 'helpers/helper-class';
+//end of var's
+@import 'normalize';
+@import 'typography/typography';
+@import 'layout';
+@import 'list';
+@import 'buttons';
+@import 'forms';
+@import 'tables';
+@import 'navigation';
+@import 'elements/table-look';
+@import 'elements/product-box';
+@import 'elements/checkbox';
+@import 'elements/thumbs';
+@import 'blocks/page-header';
+
+
+//for demo purpose
+@import 'demo/demo';
+@import 'demo/header';

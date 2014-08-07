@@ -1,0 +1,14 @@
+.thumb-40{
+	line-height: 40px;
+	vertical-align: middle;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	@include radius(2);
+	display: block;
+	img{
+		max-width: 40px;
+		max-height: 40px;
+		vertical-align: middle;
+	}
+}

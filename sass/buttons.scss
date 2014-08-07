@@ -1,0 +1,48 @@
+.btn{
+	@include radius(2);
+	border: 0;
+	color: $light;
+	@include font-size(11);
+	font-weight: 600;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 22px;
+	padding: 6px 17px;
+	@include transition(0.2s);
+	display: inline-block;
+	&.btn-lg{
+		padding: 10px 20px;
+		font-size: $font-size-base;
+	}
+	&.btn-sm{
+		padding: 4px 14px;
+	}
+	&.btn-primary{
+		background: $gray-dark;
+	}
+	&.btn-success{
+		color: $gray-dark;
+		background: $green-light;
+	}
+	&.btn-info{
+		color: $gray-dark;
+		background: $blue;
+	}
+	&.btn-warning{
+		background: $red;
+	}
+	&.btn-pending{
+		background: $gray-light-2;
+		color: $light;
+	}
+	&.btn-success-light{
+		background: $green-light;
+		color: $light;
+	}
+	&.btn-disable{
+		opacity: 0.5;
+	}
+	&:hover{
+		opacity: 0.9;
+	}
+}
