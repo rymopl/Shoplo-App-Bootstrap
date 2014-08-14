@@ -7,6 +7,10 @@
     text-transform: lowercase;
     top: 1px;
     font-family: 'shoplo' !important;
+    
+    &.icon-refresh{
+	    font-family: 'shoplo2' !important;
+    }
 }
 .btn{
 	.glyphicon{
@@ -120,4 +124,8 @@
 }
 .icon-ex:before{
 	content: '!';
+}
+.icon-refresh:before{
+	content: 'r';
+	text-transform: uppercase;
 }
