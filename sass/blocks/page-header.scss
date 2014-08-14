@@ -1,4 +1,19 @@
 .page-header{
+	.page-title{
+		vertical-align: middle;
+		h1{
+			@include font-size(22);
+			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
+	  	}
+		img{
+			display: inline-block;
+			margin-right: 20px;
+			vertical-align: middle;
+			max-height: 40px;
+		}
+	}
 	padding:35px 30px;
 	.search-form{
 		position: relative;
