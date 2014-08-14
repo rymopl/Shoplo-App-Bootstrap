@@ -1,13 +1,13 @@
-#header{
-	width: 100%;
+#leftMenu{
 	background: $gray-dark;
 	ul{
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		li{
-			float: left;
-			margin: 0 5px;
+			display: block;
+			margin: 5px 0;
+			border-bottom: 1px solid #555;
 			a{
 				padding: 10px 20px;
 				text-decoration: none;

@@ -1,0 +1,325 @@
+@import '../../variables';
+@import '../../mixins/mixins';
+$green-mint: #73daa1;
+#step1{
+	.border-doted{
+	position: relative;
+		&:before{
+			height: 7px;
+			width: 100% ;
+			background: url(../img/sharedstock/sharedstock-border.png);
+			content: '';
+			position: absolute;
+			display: block;
+			overflow: hidden;
+			left: 0px;
+			bottom:-22px;
+		}
+	}
+	header{
+		display: inline-block;
+		margin: auto;
+		padding-left: 62px;
+		position: relative;
+		&:before{
+			width: 42px;
+			height: 76px;
+			display: block;
+			background:url(../img/sharedstock/step1-logo.png);
+			position: absolute;
+			bottom:-22px;
+			left: 0;
+			content:'';
+		}
+		h1{
+			@include font-size(41.5);
+			font-weight: 600;
+			margin: 10px 0 0;
+			position: relative;
+			
+			span{
+				font-weight: 300;
+			}
+			
+		}
+		h2{
+			@include font-size(18);
+			font-weight: 400;
+			margin: 0;
+		}
+	}
+	#mainStock{
+		position: relative;
+		&:before{
+			content: '';
+			height: 62px;
+			width: 1px;
+			border-left: 1px dashed $gray;
+			display: block;
+			position: absolute;
+			display: block;
+			bottom:-62px;
+			left: 50%;
+		}
+		&:after{
+			width: 42px;
+			height: 76px;
+			display: block;
+			background:url(../img/sharedstock/step1-logo.png);
+			position: absolute;
+			top:-65px;
+			left: 50%;
+			margin-left: -21px;
+			content:'';
+		}
+		
+	}
+}
+.btn-shared{
+	background: $green-mint;
+	color: $dark;
+}
+#shopList{
+	padding: 0;
+	position: relative;
+	&:after{
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		@include radius(40);
+		background: $green-mint;
+		content: 'R';
+		font-family: 'shoplo2';
+		display: block;
+		left: 50%;
+		margin-left: -17.5px;
+		top:-18.5px;
+		line-height: 35px;
+		font-size: 18px;
+		color: $light;
+	}
+	&:before{
+		width: 75%;
+		height: 1px;
+		display: block;
+		top:0;
+		left: 12.5%;
+		content: '';
+		border-top: 1px dashed $gray;
+		position: absolute;
+		@media (max-width: 970px) {
+			width: percentage(2/3);
+			left: percentage(1/6);
+		}
+		@media (max-width: 805px) {
+			width: percentage(1/2);
+			left: 25%;
+		}
+		@media (max-width: 630px) {
+			width: 0%;
+		}
+	}
+}
+.shop-span{
+	width: 25%;
+	text-align: center;
+	float: left;
+	margin-top: 85px;
+	position: relative;
+	&:before{
+		content: '';
+		height: 85px;
+		width: 1px;
+		border-left: 1px dashed $gray;
+		display: block;
+		position: absolute;
+		display: block;
+		top:-85px;
+		left: 50%;
+	}
+	figure{
+		position: relative;
+		margin: auto;
+		.remove-shop-btn {
+		    background-image: url(../img/sharedstock/shared-stock-delete-btn.png);
+		    width: 8px;
+		    height: 8px;
+		    position: absolute;
+		    top:5px;
+		    right: 5px;
+		}
+	}
+	@media (max-width: 970px) {
+		width: percentage(1/3);
+	}
+	@media (max-width: 805px) {
+		width: percentage(1/2);
+	}
+	@media (max-width: 630px) {
+		width: 100%;
+	}
+}
+
+
+
+div.space {clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em; }
+div.long-space {clear:both;float:none;width:100%;height:5em;margin:0 0 1.45em; }
+
+.sharedstock-welcome { background: #73daa2; }
+.sharedstock-welcome-title {
+    font-weight:300;
+    font-size:50px;
+    background-image: url(../img/sharedstock/shared-stock-app-welcome-head-graphic.png);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    min-height: 120px;
+    padding-top: 10px;
+    padding-left: 70px;
+    margin-bottom: 0px;
+}
+.sharedstock-welcome-head-step {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight:300;
+    font-size:36px;
+}
+.sharedstock-welcome-head-title-sm {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight:600;
+    font-size:22px;
+}
+
+.sharedstock-welcome-head-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight:600;
+    font-size:36px;
+}
+.sharedstock-welcome-subtitle {
+    font-size: 16px!important;
+}
+.sharedstock-welcome-tip{
+    color: #ffffff;
+}
+
+.sharedstock-sync-btn {
+    background-image: url(../img/sharedstock/shared-stock-sync-btn.png);
+    background-repeat: no-repeat;
+}
+.sharedstock-skulist-menu {
+    background: #73daa2;
+    /*padding:30px;*/
+}
+.sharedstock-table-grey-td {
+    color: #999999;
+    font-weight:300!important;
+}
+.sharedstock-table-params {
+    background-color: #d8d8d8;
+    color: #ffffff;
+    margin: 5px;
+}
+.quantity-input {
+    background-color: #dee9f0;
+    padding: 6px 8px;
+    border-radius: 2px;
+}
+.shop-box {
+    background-image: url(../img/sharedstock/shared-stock-shop-box.png);
+    background-repeat: no-repeat;
+    min-height: 148px;
+    max-width: 168px;
+    min-width: 168px;
+    padding-top: 100px;
+}
+.shop-box-title {
+    margin: 10px auto 0;
+    color: #ffffff;
+}
+
+.add-shop-box {
+    background-image: url(../img/sharedstock/shared-stock-add-shop-box.png);
+    background-repeat: no-repeat;
+    border: solid;
+    border-color: #d8d8d8;
+    border-radius: 2px;
+    min-height: 148px;
+    max-width: 168px;
+    min-width: 168px;
+    padding-top: 90px;
+}
+
+.sharedstock-add-shop-btn {
+    background-color: #d8d8d8;
+    color: #ffffff;
+}
+
+.add-shop-box2 {
+    background: #ffffff;
+    min-height: 148px;
+    max-width: 168px;
+    border: thin solid #d8d8d8;
+    border-radius: 3px;
+}
+.add-shop-box2 img {
+
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 15px;
+    padding-top: 20px;
+}
+.add-shop-box2 p {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 25px auto 0;
+}
+
+.add-shop-box2 label {
+    margin-top: 10px;
+}
+
+.shop-box2 {
+    background: #73daa2;
+    min-height: 148px;
+    max-width: 168px;
+    border-radius: 3px;
+     }
+
+.shop-box2 img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 15px;
+    padding-top: 30px;
+ }
+
+.shop-box2 p {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 25px auto 0; }
+
+.shop-box2 label {
+    margin-top: 10px; }
+
+
+
+.table.tb-bordered .image {
+    width: 40px;
+}
+
+.import-div h2{
+    font-size:1.95rem;
+    font-size:19.5px;
+    font-weight:300;
+    margin:15px 0
+}
+
+.import-div h1{
+    display: inline;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+    vertical-align: middle;
+}

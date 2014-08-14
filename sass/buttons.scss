@@ -12,7 +12,7 @@
 	display: inline-block;
 	&.btn-lg{
 		padding: 10px 20px;
-		font-size: $font-size-base;
+		font-size: 12px;
 	}
 	&.btn-sm{
 		padding: 4px 14px;
@@ -41,6 +41,9 @@
 	}
 	&.btn-disable{
 		opacity: 0.5;
+	}
+	&.btn-icon{
+		padding: 6px 10px;
 	}
 	&:hover{
 		opacity: 0.9;

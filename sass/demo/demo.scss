@@ -19,3 +19,12 @@
 	font-family: 'shoplo2';
 	font-size: 30px;
 }
+#leftMenu{
+	width: 230px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	background: $dark;
+	z-index: 9;
+}
