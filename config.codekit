@@ -96,35 +96,57 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/shared-stock-add-shop-element.png": {
+	"\/img\/sharedstock\/shared-stock-add-shop-element.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3882,
-		"inputAbbreviatedPath": "\/img\/shared-stock-add-shop-element.png",
-		"outputAbbreviatedPath": "\/img\/shared-stock-add-shop-element.png",
+		"inputAbbreviatedPath": "\/img\/sharedstock\/shared-stock-add-shop-element.png",
+		"outputAbbreviatedPath": "\/img\/sharedstock\/shared-stock-add-shop-element.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/sharedstock-border.png": {
+	"\/img\/sharedstock\/shared-stock-delete-btn.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 297,
-		"inputAbbreviatedPath": "\/img\/sharedstock-border.png",
-		"outputAbbreviatedPath": "\/img\/sharedstock-border.png",
+		"initialSize": 2873,
+		"inputAbbreviatedPath": "\/img\/sharedstock\/shared-stock-delete-btn.png",
+		"outputAbbreviatedPath": "\/img\/sharedstock\/shared-stock-delete-btn.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/sharedstock-shape.png": {
+	"\/img\/sharedstock\/sharedstock-border.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 209,
+		"inputAbbreviatedPath": "\/img\/sharedstock\/sharedstock-border.png",
+		"outputAbbreviatedPath": "\/img\/sharedstock\/sharedstock-border.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/sharedstock\/sharedstock-shape.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3879,
-		"inputAbbreviatedPath": "\/img\/sharedstock-shape.png",
-		"outputAbbreviatedPath": "\/img\/sharedstock-shape.png",
+		"inputAbbreviatedPath": "\/img\/sharedstock\/sharedstock-shape.png",
+		"outputAbbreviatedPath": "\/img\/sharedstock\/sharedstock-shape.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/sharedstock\/step1-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1381,
+		"inputAbbreviatedPath": "\/img\/sharedstock\/step1-logo.png",
+		"outputAbbreviatedPath": "\/img\/sharedstock\/step1-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -136,17 +158,6 @@
 		"initialSize": 2290,
 		"inputAbbreviatedPath": "\/img\/ss-logo.png",
 		"outputAbbreviatedPath": "\/img\/ss-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/step1-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1494,
-		"inputAbbreviatedPath": "\/img\/step1-logo.png",
-		"outputAbbreviatedPath": "\/img\/step1-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

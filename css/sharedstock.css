@@ -64,10 +64,10 @@
   background: #73daa1;
   color: #1c1f27; }
 
-#shopList {
+#shopsList {
   padding: 0;
   position: relative; }
-  #shopList:after {
+  #shopsList:after {
     width: 35px;
     height: 35px;
     position: absolute;
@@ -84,7 +84,7 @@
     line-height: 35px;
     font-size: 18px;
     color: white; }
-  #shopList:before {
+  #shopsList:before {
     width: 75%;
     height: 1px;
     display: block;
@@ -94,15 +94,15 @@
     border-top: 1px dashed #333333;
     position: absolute; }
     @media (max-width: 970px) {
-      #shopList:before {
+      #shopsList:before {
         width: 66.66667%;
         left: 16.66667%; } }
     @media (max-width: 805px) {
-      #shopList:before {
+      #shopsList:before {
         width: 50%;
         left: 25%; } }
     @media (max-width: 630px) {
-      #shopList:before {
+      #shopsList:before {
         width: 0%; } }
 
 .shop-span {

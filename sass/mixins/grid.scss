@@ -25,3 +25,9 @@
 	padding-right: 30px;
 	
 }
+
+@mixin app-span-offset($columns) {
+  @media (min-width: $break-sm-min) {
+    margin-left: percentage(($columns / $grid-columns));
+  }
+}
