@@ -24,6 +24,8 @@
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
     transform-origin: top left; }
+    #instockReminderButton.remider-btn-left p {
+      border-radius: 5px 5px 0 0; }
   #instockReminderButton.remider-btn-right {
     right: 0;
     top: 50%;
@@ -35,15 +37,25 @@
     -webkit-transform-origin: top right;
     -ms-transform-origin: top right;
     transform-origin: top right; }
+    #instockReminderButton.remider-btn-right p {
+      border-radius: 5px 5px 0 0; }
   #instockReminderButton.remider-btn-top-right {
     right: 20px;
     top: 0; }
+    #instockReminderButton.remider-btn-top-right p {
+      border-radius: 0 0 5px 5px; }
   #instockReminderButton.remider-btn-top-left {
     left: 20px;
     top: 0; }
+    #instockReminderButton.remider-btn-top-left p {
+      border-radius: 0 0 5px 5px; }
   #instockReminderButton.remider-btn-bottom-right {
     right: 20px;
     bottom: 0; }
+    #instockReminderButton.remider-btn-bottom-right p {
+      border-radius: 5px 5px 0 0; }
   #instockReminderButton.remider-btn-bottom-left {
     left: 20px;
     bottom: 0; }
+    #instockReminderButton.remider-btn-bottom-left p {
+      border-radius: 5px 5px 0 0; }
