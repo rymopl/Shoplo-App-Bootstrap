@@ -24,6 +24,7 @@
 		-webkit-transform-origin: top left;
 		-ms-transform-origin: top left;
 		transform-origin: top left;
+		border-radius:0 2px 2px 0;
 	}
 	
 	&.remider-btn-right{
@@ -35,22 +36,27 @@
 		-webkit-transform-origin: top right;
 		-ms-transform-origin: top right;
 		transform-origin: top right;
+		border-radius:2px 0 0 2px;
 	}
 	&.remider-btn-top-right{
 		right: 20px;
 		top:0;
+		border-radius: 0 0 2px 2px;
 	}
 	&.remider-btn-top-left{
 		left: 20px;
 		top:0;
+		border-radius: 0 0 2px 2px;
 	}
 	&.remider-btn-bottom-right{
 		right: 20px;
 		bottom:0;
+		border-radius: 2px 2px 0 0;
 	}
 	&.remider-btn-bottom-left{
 		left: 20px;
 		bottom:0;
+		border-radius: 2px 2px 0 0;
 	}
 	
 }
