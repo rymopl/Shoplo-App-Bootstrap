@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/buttons.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -56,7 +57,7 @@
 	                <div class="app-span-9 horizontal-form">
 	                    <div class="app-row">
 	                        <div class="form-group app-span-12 app-table-td">
-	                        <a href="#modal">Click</a>
+	                        <a href="" data-remodal-target="modal">Click</a>
 	                        </div>
 	                    </div>
 	                </div>
@@ -64,7 +65,7 @@
 	        </div>
 		</div>
 	</div>
-<div class="remodal" data-remodal-id="modal">
+<div class="remodal" data-remodal-id="modal" data-remodal-options='{ "hashTracking": false }'>
     <h1>Remodal</h1>
     <p>
         Flat, responsive, lightweight, fast, easy customizable modal window plugin
@@ -94,6 +95,31 @@
 	    </div>
     </div>
 </div>
+
+<div id="instockReminderButton" class="remider-btn-left">
+	<p data-remodal-target="modal">Powiadom mnie</p>
+</div>
+
+<div id="instockReminderButton" class="remider-btn-right">
+	<p data-remodal-target="modal">Powiadom mnie</p>
+</div>
+
+<div id="instockReminderButton" class="remider-btn-top-right">
+	<p data-remodal-target="modal">Powiadom mnie</p>
+</div>
+
+<div id="instockReminderButton" class="remider-btn-top-left">
+	<p data-remodal-target="modal">Powiadom mnie</p>
+</div>
+
+<div id="instockReminderButton" class="remider-btn-bottom-right">
+	<p data-remodal-target="modal">Powiadom mnie</p>
+</div>
+
+<div id="instockReminderButton" class="remider-btn-bottom-left">
+	<p data-remodal-target="modal">Powiadom mnie</p>
+</div>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="js/remodal.js"></script>
         <script src="js/main.js"></script>

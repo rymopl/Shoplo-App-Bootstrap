@@ -1,0 +1,49 @@
+#instockReminderButton {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: fixed;
+  z-index: 9999; }
+  #instockReminderButton p {
+    margin: 0;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #DC6763;
+    color: #fff; }
+    #instockReminderButton p:hover {
+      cursor: pointer;
+      opacity: 0.8; }
+  #instockReminderButton.remider-btn-left {
+    left: 0;
+    top: 50%;
+    -ms-transform: rotate(90deg) translate(-50%, -100%);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg) translate(-50%, -100%);
+    /* Chrome, Safari, Opera */
+    transform: rotate(90deg) translate(-50%, -100%);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left; }
+  #instockReminderButton.remider-btn-right {
+    right: 0;
+    top: 50%;
+    -ms-transform: rotate(-90deg) translate(50%, -100%);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg) translate(50%, -100%);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg) translate(50%, -100%);
+    -webkit-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right; }
+  #instockReminderButton.remider-btn-top-right {
+    right: 20px;
+    top: 0; }
+  #instockReminderButton.remider-btn-top-left {
+    left: 20px;
+    top: 0; }
+  #instockReminderButton.remider-btn-bottom-right {
+    right: 20px;
+    bottom: 0; }
+  #instockReminderButton.remider-btn-bottom-left {
+    left: 20px;
+    bottom: 0; }
