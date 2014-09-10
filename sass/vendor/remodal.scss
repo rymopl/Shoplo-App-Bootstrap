@@ -129,50 +129,6 @@ body.remodal_active .remodal {
 .remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
     color: #999;
 }
-
-/* Dialog buttons */
-
-.remodal-confirm, .remodal-cancel {
-    display: inline-block;
-    width: 120px;
-    padding: 9px 0;
-    margin: 0 0 5px 0;
-
-    font-size: 10pt;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    background-clip: padding-box;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-.remodal-confirm {
-    border: 2px solid #16a085;
-    background: #f4f4f4;
-    color: #16a085;
-}
-
-.remodal-confirm:hover, .remodal-confirm:active {
-    background: #16a085;
-    color: #f4f4f4;
-}
-
-.remodal-cancel {
-    border: 2px solid #c0392b;
-    background: #f4f4f4;
-    color: #c0392b;
-}
-
-.remodal-cancel:hover, .remodal-cancel:active {
-    background: #c0392b;
-    color: #f4f4f4;
-}
-
 /* Media queries
    ========================================================================== */
 
