@@ -14,14 +14,32 @@
 	text-align: left;
 	min-width: 170px;
 	height: 34px;
-	-moz-appearance:menulist;
-	-webkit-appearance:menulist;
+	-moz-appearance:none;
+	-webkit-appearance:none;
 	box-shadow: 0;
+	position: relative;
+
 	option{
 		line-height: 22px;
 		padding: 8px 10px;
-		&:focus{
-			background: #222;
-		}
+	}
+}
+.app-select{
+	position: relative;
+		&:before{
+		position: absolute;
+		width: 20px;
+		height: 100%;
+		background: $gray-dark;
+		content: '5';
+		font-family: 'shoplo';
+		color: #fff;
+		display: block;
+		right: 0;
+		top:0;
+		@include font-size(8);
+		line-height: 34px;
+		text-align: left;
+		z-index: 99;
 	}
 }
