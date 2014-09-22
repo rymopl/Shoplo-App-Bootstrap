@@ -1,13 +1,16 @@
 .glyphicon{
 	display: inline-block;
-	line-height: 1em;
-	font-style: normal;
-    font-weight: 400;
     position: relative;
-    text-transform: lowercase;
     top: 1px;
     font-family: 'shoplo' !important;
-    
+    font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
     &.icon-refresh{
 	    font-family: 'shoplo2' !important;
     }

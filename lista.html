@@ -14,6 +14,7 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+    <div class="app-wrap">
     <div id="leftMenu">
 		<nav>
 			<ul class="clearfix">
@@ -38,7 +39,7 @@
 
 <div class="app-container">
 	<div class="app-row">
-		<header class="page-header app-span-12">
+		<header class="page-header no-padding app-span-12">
 			<div class="app-row">
 				<div class="app-span-4 page-title">
 					<img src="img/vert.jpg">
@@ -61,23 +62,23 @@
 		</header>
 	</div>
 	<div class="app-row">
-	<div class="app-span-12">
+
 		<table class="table tb-bordered">
 			<thead>
 	            <tr>
 	            	<th></th>
 	                <th>#</th>
-	                <th>Nazwa kampanii</th>
+	                <th class="dark">Nazwa kampanii</th>
 	                <th>Produkt</th>
 	                <th class="text-center">Aktywna</th>
 	                <th class="text-center">Ilość wyświetleń</th>
 	                <th class="text-center">Ilość kliknięć</th>
-	                <th class="text-right"></th>
+	                <th colspan="2" class="text-right"></th>
 	            </tr>
             </thead>
             <tbody id="campaignList">
 			<tr>
-				<td><span class="glyphicon icon-radio-button status status-ok "></td>
+				<td class="pd-left-30 pd-right-20"><span class="glyphicon icon-radio-button status status-ok "></td>
 				<td>1</td>
 				<td><strong>test nazwy kampanii</strong></td>
 				<td>
@@ -85,21 +86,23 @@
 					<img src="img/vert.jpg">
 					</span>
 				</td>
-				<td class="text-center">
+				<td class="text-left">
 					<div class="checkbox">
 						<input type="checkbox" name="active" id="active2" data-map-id="2">
-						<label for="active2"></label>
+						<label for="active2"><span>tutaj tytuł</span></label>
 					</div>
 				</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-right">
-					<a class="" href="http://local.crossselling.shoploapp.com/edit/2"><span class="glyphicon icon-note action-link"></span></a>
-					<a class="" onclick="if( confirm('Czy na pewno chcesz usunąć tą kampanię?') ){ window.location='http://local.crossselling.shoploapp.com/delete/2'};" href="#"><span class="glyphicon icon-trash action-link"></span></a>
+				<td class="action-link pd-left-25">
+					<a class="" href="http://local.crossselling.shoploapp.com/edit/2"><span class="glyphicon icon-note "></span></a>
+				</td>
+				<td class="action-link pd-left-25 pd-right-30">
+					<a class="" href="#"><span class="glyphicon icon-trash action-link"></span></a>
 				</td>
 			</tr>
 			<tr>
-				<td><span class="glyphicon icon-radio-button status status-pending"></td>
+				<td class="pd-left-30 pd-right-20"><span class="glyphicon icon-radio-button status status-pending"></td>
 				<td>1</td>
 				<td><strong>test nazwy kampanii</strong></td>
 				<td>
@@ -107,21 +110,23 @@
 					<img src="img/vert.jpg">
 					</span>
 				</td>
-				<td class="text-center">
+				<td class="text-left">
 					<div class="checkbox">
 						<input type="checkbox" name="active" id="active2" data-map-id="2">
-						<label for="active2"></label>
+						<label for="active2"><span>tutaj tytuł</span></label>
 					</div>
 				</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-right">
-					<a class="" href="http://local.crossselling.shoploapp.com/edit/2"><span class="glyphicon icon-note action-link"></span></a>
-					<a class="" onclick="if( confirm('Czy na pewno chcesz usunąć tą kampanię?') ){ window.location='http://local.crossselling.shoploapp.com/delete/2'};" href="#"><span class="glyphicon icon-trash action-link"></span></a>
+				<td class="action-link pd-left-25">
+					<a class="" href="http://local.crossselling.shoploapp.com/edit/2"><span class="glyphicon icon-note "></span></a>
+				</td>
+				<td class="action-link pd-left-25 pd-right-30">
+					<a class="" href="#"><span class="glyphicon icon-trash action-link"></span></a>
 				</td>
 			</tr>
 			<tr>
-				<td><span class="glyphicon icon-radio-button status status-alert"></td>
+				<td class="pd-left-30 pd-right-20"><span class="glyphicon icon-radio-button status status-alert"></td>
 				<td>1</td>
 				<td><strong>test nazwy kampanii</strong></td>
 				<td>
@@ -129,23 +134,26 @@
 					<img src="img/hor.png">
 					</span>
 				</td>
-				<td class="text-center">
+				<td class="text-left">
 					<div class="checkbox">
 						<input type="checkbox" name="active" id="active2" data-map-id="2">
-						<label for="active2"></label>
+						<label for="active2"><span>tutaj tytuł</span></label>
 					</div>
 				</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-right">
-					<a class="" href="http://local.crossselling.shoploapp.com/edit/2"><span class="glyphicon icon-note action-link"></span></a>
-					<a class="" onclick="if( confirm('Czy na pewno chcesz usunąć tą kampanię?') ){ window.location='http://local.crossselling.shoploapp.com/delete/2'};" href="#"><span class="glyphicon icon-trash action-link"></span></a>
+				<td class="action-link pd-left-25">
+					<a class="" href="http://local.crossselling.shoploapp.com/edit/2"><span class="glyphicon icon-note "></span></a>
+				</td>
+				<td class="action-link pd-left-25 pd-right-30">
+					<a class="" href="#"><span class="glyphicon icon-trash action-link"></span></a>
 				</td>
 			</tr>
 			</tbody>
 		</table>
+
 	</div>
-	</div>
+</div>
 </div>
 </body>
 </html>

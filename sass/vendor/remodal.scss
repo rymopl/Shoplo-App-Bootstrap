@@ -102,11 +102,13 @@ body.remodal_active .remodal {
     position: absolute;
     top: 5px;
     right: 5px;
-
     width: 28px;
     height: 28px;
-
+    z-index: 10;
     text-decoration: none;
+    &:hover{
+	    text-decoration: none;
+    }
 }
 
 .remodal-close:after {
@@ -128,13 +130,14 @@ body.remodal_active .remodal {
 
 .remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
     color: #999;
+    
 }
 /* Media queries
    ========================================================================== */
 
 @media only screen and (min-width: 40.063em) /* min-width 641px */ {
     .remodal {
-        max-width: 550px;
+        width: 560px;
         margin: 20px auto;
         min-height: 0;
 
@@ -168,6 +171,7 @@ body.remodal_active .remodal {
 		border: 1px solid #999;
 		padding: 5px 10px;
 		font-size: 12px;
+		background: #fff;
 	}
 	button{
 		background: #000;
@@ -179,6 +183,52 @@ body.remodal_active .remodal {
 		color: #fff;
 	}
 }
+#modalMessageError{
+	display: none;
+	&.modal-message-show{
+		display: block;
+	}
+	p{
+		font-size: 14px;
+		font-weight: 300;
+		
+		line-height: 1.3em;
+		&.modal-success{
+			color: green;
+		}
+		&.modal-error{
+			color:red;
+		}
+	}
+}
+#modalMessageSuccess{
+	display: none;
+	background: #7DC89A;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	border-radius:5px; /*dodaj ten sam border radius tu co na modalu*/
+	&.modal-message-show{
+		display: block;
+		
+		padding: 50px 0;
+		p{
+			font-size: 25px;
+			font-weight: 300;
+			color: #fff;
+			margin-top: 80px;
+		}
+	}
+}
+#instockreminderForm{
+	h1{
+		font-size: 30px;
+		color: inherit;
+	}
+}
+
 @media only screen and (max-width: 40.062em){
 	#modalProductPhoto{
 		width: 100%;

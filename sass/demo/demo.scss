@@ -20,11 +20,16 @@
 	font-size: 30px;
 }
 #leftMenu{
-	width: 230px;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top:0;
-	background: $dark;
-	z-index: 9;
+	background-color: #1c1f27;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5) inset;
+    color: #fff;
+    display: table-cell;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    transform: translate3d(0px, 0px, 0px);
+    transition: width 0.3s ease-out 0s;
+    vertical-align: top;
+    width: 230px;
+    z-index: 5;
 }

@@ -71,7 +71,9 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
     color: $gray;
 }
-
+html,body{
+	height: 100%;
+}
 /**
  * Address `font-family` inconsistency between `textarea` and other form
  * elements.
@@ -91,6 +93,7 @@ textarea {
 
 body {
     margin: 0 0 0 230px;
+    background: #F2F7FA;
 }
 
 /* ==========================================================================

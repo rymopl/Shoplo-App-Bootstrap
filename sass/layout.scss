@@ -1,6 +1,26 @@
+.app-wrap{
+	display: table;
+    left: 0;
+    max-width: 2000px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    @media (min-width: 1025px) {
+	    &:after{
+			width: 30px;
+			content: '';
+			display: table-cell;
+			background: #f2f7fa
+		}
+	}
+}
+
 .app-container{
 	@include container-fixed();
-	width: 100%;
+	display: table-cell;
+	border-right:1px solid $gray-light;
+	position: relative;
 	/*
 @media (min-width: $break-sm-min) {
     	width: $container-sm;
@@ -13,6 +33,7 @@
 	}
 */
 }
+
 .app-row{
 	@include create-app-row();
 }

@@ -14,10 +14,13 @@
 	text-align: left;
 	min-width: 170px;
 	height: 34px;
+	-moz-appearance:menulist;
+	-webkit-appearance:menulist;
+	box-shadow: 0;
 	option{
 		line-height: 22px;
 		padding: 8px 10px;
-		&:hover{
+		&:focus{
 			background: #222;
 		}
 	}

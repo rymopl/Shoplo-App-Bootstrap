@@ -67,61 +67,74 @@
 		</div>
 	</div>
 <div class="remodal" data-remodal-id="modal" data-remodal-options='{ "hashTracking": false }'>
-    <h1>Remodal</h1>
-    <p>
-        Flat, responsive, lightweight, fast, easy customizable modal window plugin
-        with declarative state notation and hash tracking.
-    </p>
-    <div id="modalSection" class="clearfix">
-	    <div id="modalProductPhoto">
-		    <img src="img/reminder-product.jpg" alt="" />
+    <div id="instockreminderForm">
+	    <h1>Remodal</h1>
+	    <p>
+	        Flat, responsive, lightweight, fast, easy customizable modal window plugin
+	        with declarative state notation and hash tracking.
+	    </p>
+	    <div id="modalSection" class="clearfix">
+		    <div id="modalProductPhoto">
+			    <img src="img/reminder-product.jpg" alt="" />
+		    </div>
+		    <div id="modalProductAction">
+			    <form action="">
+			    	<div class="modal-form-group">
+			    		<label for="modalVariant">Wybierz wariant</label>
+					    <select name="" id="modalVariant">
+						    <option value="">Warian 1</option>
+						    <option value="">Warian 1</option>
+						    <option value="">Warian 1</option>
+						    <option value="">Warian 1</option>
+					    </select>
+				    </div>
+				    <div class="modal-form-group">
+				    	<label for="modalEmail">Twój email</label>
+				    	<input id="modalEmail" type="email" required="required" placeholder="podaj swój adres"/>
+				    </div>
+				    <button type="submit">Zapisz mnie</button>
+			    </form>
+		    </div>
 	    </div>
-	    <div id="modalProductAction">
-		    <form action="">
-		    	<div class="modal-form-group">
-		    		<label for="modalVariant">Wybierz wariant</label>
-				    <select name="" id="modalVariant">
-					    <option value="">Warian 1</option>
-					    <option value="">Warian 1</option>
-					    <option value="">Warian 1</option>
-					    <option value="">Warian 1</option>
-				    </select>
-			    </div>
-			    <div class="modal-form-group">
-			    	<label for="modalEmail">Twój email</label>
-			    	<input id="modalEmail" type="email" required="required" placeholder="podaj swój adres"/>
-			    </div>
-			    <button type="submit">Zapisz mnie</button>
-		    </form>
-	    </div>
+    </div>
+    <div id="modalMessageError" class="">
+	    <p class="modal-error">
+		    Twoje zgłoszenie zostało przyjęte
+	    </p>
+    </div>
+    <div id="modalMessageSuccess" class="modal-message-show">
+	    <p class="modal-success">
+		    Twoje zgłoszenie zostało przyjęte
+	    </p>
     </div>
 </div>
 
-<div id="instockReminderButton" class="remider-btn-left">
+<div id="instockReminderButton" class="reminder-btn-left">
 	<p data-remodal-target="modal">Powiadom mnie</p>
 </div>
 
-<div id="instockReminderButton" class="remider-btn-right">
+<div id="instockReminderButton" class="reminder-btn-right">
 	<p data-remodal-target="modal">Powiadom mnie</p>
 </div>
 
-<div id="instockReminderButton" class="remider-btn-top-right">
+<div id="instockReminderButton" class="reminder-btn-top-right">
 	<p data-remodal-target="modal">Powiadom mnie</p>
 </div>
 
-<div id="instockReminderButton" class="remider-btn-top-left">
+<div id="instockReminderButton" class="reminder-btn-top-left">
 	<p data-remodal-target="modal">Powiadom mnie</p>
 </div>
 
-<div id="instockReminderButton" class="remider-btn-bottom-right">
+<div id="instockReminderButton" class="reminder-btn-bottom-right">
 	<p data-remodal-target="modal">Powiadom mnie</p>
 </div>
 
-<div id="instockReminderButton" class="remider-btn-bottom-left">
+<div id="instockReminderButton" class="reminder-btn-bottom-left">
 	<p data-remodal-target="modal">Powiadom mnie</p>
 </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/remodal.js"></script>
         <script src="js/main.js"></script>
     </body>

@@ -2,7 +2,7 @@
 	font-size: $font-size-base;
 	margin-bottom: 15px;
 	label{
-		font-weight: 600;
+		font-weight: 700;
 		@include font-size(14);
 		margin-bottom: 5px;
 	}
@@ -15,6 +15,11 @@
 		line-height: 24px;
 		@include radius(2px);
 		color: #484b58;
+		&.error{
+			color: $red;
+			background: lighten($red,32%);
+			border-color:$red;
+		}
 	}
 	textarea.form-control{
 		height: auto;
@@ -44,6 +49,8 @@
 .confirm-form{
 	padding: 30px;
 	background: $dark;
+	position: fixed;
+	bottom: 0;
 	a,button{
 		margin-right: 7px;
 	}

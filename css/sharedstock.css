@@ -62,7 +62,7 @@
 
 .btn-shared {
   background: #73daa1;
-  color: #1c1f27; }
+  color: #1C1F27; }
 
 #shopsList {
   padding: 0;
@@ -83,7 +83,7 @@
     top: -18.5px;
     line-height: 35px;
     font-size: 18px;
-    color: white; }
+    color: #fff; }
   #shopsList:before {
     width: 75%;
     height: 1px;

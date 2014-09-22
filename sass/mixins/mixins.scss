@@ -6,3 +6,17 @@
   font-size: ($sizeValue / 10) + rem;
   font-size: $sizeValue + px;
 }
+@mixin thumb($w){
+	line-height: $w;
+	vertical-align: middle;
+	height: $w;
+	width: $w;
+	text-align: center;
+	@include radius(2);
+	display: block;
+	img{
+		max-width: $w;
+		max-height: $w;
+		vertical-align: middle;
+	}
+}
