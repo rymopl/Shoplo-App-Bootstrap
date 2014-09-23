@@ -51,6 +51,7 @@
 	background: $dark;
 	position: fixed;
 	bottom: 0;
+	z-index: 999;
 	a,button{
 		margin-right: 7px;
 	}
