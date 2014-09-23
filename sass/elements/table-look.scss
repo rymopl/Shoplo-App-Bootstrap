@@ -14,6 +14,9 @@
 			&:last-child{
 				border-bottom:0;
 			}
+			&.in-row{
+				padding-bottom: 0;
+			}
 		}
 	}
 	.app-table-horizontal{
