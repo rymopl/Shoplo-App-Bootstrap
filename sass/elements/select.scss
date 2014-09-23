@@ -30,6 +30,7 @@
 		min-width: 100%;
 		.select-primary{
 			min-width: 100%;
+			width: 100%;
 		}
 	}
 	&:before{
@@ -47,5 +48,13 @@
 		line-height: 34px;
 		text-align: left;
 		z-index: 99;
+	}
+	&.error{
+		&:before{
+			background: $red;
+		}
+		.select-primary{
+			background: $red;
+		}
 	}
 }
