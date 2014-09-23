@@ -26,7 +26,13 @@
 }
 .app-select{
 	position: relative;
-		&:before{
+	&.select-max{
+		min-width: 100%;
+		.select-primary{
+			min-width: 100%;
+		}
+	}
+	&:before{
 		position: absolute;
 		width: 20px;
 		height: 100%;
