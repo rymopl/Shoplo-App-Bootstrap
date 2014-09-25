@@ -1,0 +1,17 @@
+#blankSlate{
+	padding-top: 100px;
+	i{
+		@include font-size(140);
+		opacity: 0.1;
+	}
+	h2{
+		@include font-size(22);
+		line-height: 40px;
+		margin: 25px auto;
+	}
+	p{
+		@include font-size(14);
+		line-height: 20px;
+		margin:0 auto 25px;
+	}
+}
