@@ -22,10 +22,12 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		width: auto;
+		@include font-size(14);
 		strong{
 			font-weight: 600;
 		}
 		label{
+			@include font-size(14);
 			span{
 				padding-left: 6px;
 				font-weight: 400;
@@ -57,6 +59,11 @@
 	&.tb-bordered{
 		td{
 			border-bottom:1px solid $gray-light;
+		}
+		.variant-children{
+			>td{
+				border-bottom: 0;
+			}
 		}
 	}
 	.action-link{
@@ -92,7 +99,16 @@
 	}
 	
 }
-
+//children tables
+.variant-children{
+	table{
+		width: 100%;
+	}
+	>td{
+		padding: 0;
+		background: $children-bg;
+	}
+}
 
 .status{
 	@include font-size(12);
