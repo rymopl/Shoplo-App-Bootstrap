@@ -1,0 +1,28 @@
+.notifications-list{
+	@include clearlist();
+	font-size:$font-size-small;
+	li{
+		div{
+			>section{
+				@include clearfix();
+				width: 100%;
+				color: $grey-meta;
+				margin-bottom: 20px;
+			}
+			>div{
+				@include clearfix();
+				color: $gray;
+				a{
+					color: inherit;
+				}
+			}
+			.notification-icon{
+				font-size:33px;
+				color: $grey-meta;
+				width: 40px;
+				text-align: center;
+				margin-right: 15px;
+			}
+		}
+	}
+}
