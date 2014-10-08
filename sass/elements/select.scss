@@ -18,7 +18,6 @@
 	-webkit-appearance:none;
 	box-shadow: 0;
 	position: relative;
-
 	option{
 		line-height: 22px;
 		padding: 8px 10px;
@@ -26,6 +25,7 @@
 }
 .app-select{
 	position: relative;
+
 	&.select-max{
 		min-width: 100%;
 		.select-primary{
@@ -44,6 +44,7 @@
 		display: block;
 		right: 0;
 		top:0;
+		@include radius(2);
 		@include font-size(8);
 		line-height: 34px;
 		text-align: left;
@@ -55,6 +56,16 @@
 		}
 		.select-primary{
 			background: $red;
+		}
+	}
+	&.select-light{
+		&:before{
+			background: $light;
+			color: $gray-dark;
+		}
+		.select-primary{
+			background: $light;
+			color: $gray-dark;
 		}
 	}
 }

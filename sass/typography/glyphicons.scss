@@ -8,7 +8,7 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	/* Better Font Rendering =========== */
+	/* Not compatible with Shoplo panel */
 /*
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -16,17 +16,6 @@
     &.icon-refresh{
 	    font-family: 'shoplo2' !important;
     }
-}
-#ikonki{
-	display: inline-block;
-    position: relative;
-    top: 1px;
-    font-family: 'shoplo' !important;
-    font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
 }
 .btn{
 	.glyphicon{

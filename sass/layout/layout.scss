@@ -21,23 +21,11 @@
 	display: table-cell;
 	border-right:1px solid $gray-light;
 	position: relative;
-	/*
-@media (min-width: $break-sm-min) {
-    	width: $container-sm;
-	}
-	@media (min-width: $break-md-min) {
-		width: $container-md;
-	}
-	@media (min-width: $break-lg-min) {
-		width: $container-lg;
-	}
-*/
 }
 
 .app-row{
 	@include create-app-row();
 }
-
 .app-span-1{
 	@include create-app-span(1)
 }

@@ -1,28 +1,25 @@
 //Colors
 
-
 $gray-dark: 	lighten(#000, 13.5%) !default; // #222
 $gray: 			lighten(#000, 20%) !default;   // #333
-$gray-light:  #dde0e8;
-$dark: #1C1F27;
+$gray-light:  	#dde0e8 !default;
+$gray-light-2:	#d0d0d0 !default;
+$grey-meta:		#d8d8d8 !default;
+$light:			#fff !default;
 
-$gray-light-2:#d0d0d0;
-$grey-meta:#d8d8d8;
-$red: #ed5859;
+$green-light: 	#cee08a !default;
+$red: 			#F55161 !default;
 
+$blue: 			#BFDBE9;
+$dark-blue: 	#1C1F27 !default;
 
+//Alerts
+$color-success: $green-light;
+$color-error: $red;
+$color-info:$blue;
 
 //Tables
-$children-bg: #F4F4F4;
-
-$light: #fff;
-
-$red: #F55161;
-
-$green-light: #cee08a;
-$green: #66B599;
-
-$blue: #BFDBE9;
+$children-bg: 	#F4F4F4;
 
 //Default background color
 $body-bg: $light !default;
@@ -33,10 +30,7 @@ $text-color: $gray;
 //Global link color
 $link-color: $gray-light;
 
-
-
 //Layout
-
 $grid-gutter-width: 30px; //for padding and margin
 $grid-columns: 12;
 
@@ -45,12 +39,10 @@ $container-sm: 750px;
 $container-md: 970px;
 $container-lg: 1170px;
 
-
 //Breakpoints
 $break-sm-min: 768px !default;
 $break-md-min:  990px !default;
 $break-lg-min:  1200px !default;
-
 
 //fonts
 $font-family: 'Open Sans', 'Helvetica', 'Arial' , sans-serif;

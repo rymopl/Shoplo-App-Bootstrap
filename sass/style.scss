@@ -1,27 +1,41 @@
+//Initialization
 @import 'variables';
+
+@import 'normalize/normalize';
+@import 'normalize/initialization';
+
 @import 'mixins/mixins';
-@import 'helpers/helper-class';
-@import 'helpers/margins';
-//end of var's
-@import 'normalize';
+
+@import 'layout/grid';
+@import 'layout/layout';
+
 @import 'typography/typography';
-@import 'layout';
-@import 'list';
-@import 'buttons';
-@import 'forms';
-@import 'tables';
-@import 'navigation';
+
+//blocks
+@import 'blocks/page-header';
+@import 'blocks/welcome-page';
+@import 'blocks/blank-slate';
+@import 'blocks/notifications-list';
+@import 'blocks/tables';
+@import 'blocks/forms';
+@import 'blocks/list';
+@import 'blocks/navigation';
+//elements
 @import 'elements/table-look';
 @import 'elements/product-box';
 @import 'elements/checkbox';
 @import 'elements/thumbs';
 @import 'elements/select';
 @import 'elements/alerts';
-@import 'blocks/page-header';
-@import 'blocks/welcome-page';
-@import 'blocks/blank-slate';
-@import 'blocks/notifications-list';
+@import 'elements/buttons';
+
+
 //@import 'vendor/remodal';
+
+//helper Classes
+@import 'helpers/helper-class';
+@import 'helpers/margins';
+@import 'helpers/paddings'; //mostly for table cells purpose
 
 //for demo purpose
 @import 'demo/demo';

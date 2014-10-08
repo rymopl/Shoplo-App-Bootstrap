@@ -27,7 +27,7 @@
 		color: $gray-dark;
 		background: $green-light;
 		&:hover{
-			background: #DAE7A6;
+			background: lighten($green-light,7%);
 		}
 	}
 	&.btn-info{
@@ -40,7 +40,7 @@
 	&.btn-warning{
 		background: $red;
 		&:hover{
-			background: #F66573;
+			background: lighten($red,7%);
 		}
 	}
 	&.btn-pending{

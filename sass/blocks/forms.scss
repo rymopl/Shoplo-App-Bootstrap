@@ -48,7 +48,7 @@
 }
 .confirm-form{
 	padding: 30px;
-	background: $dark;
+	background: $dark-blue;
 	position: fixed;
 	bottom: 0;
 	z-index: 999;
@@ -60,13 +60,12 @@
 	}
 }
 .bordered-field{
-	padding:10px;
+	padding:9px;
 	background: $children-bg;
 	border: 1px solid $gray-light;
 	@include radius(2);
 	input{
-		text-transform: uppercase;
-		font-size:$font-size-xsmall;
-		font-weight: 700;
+		font-size:$font-size-base;
+		line-height: 23px;
 	}
 }

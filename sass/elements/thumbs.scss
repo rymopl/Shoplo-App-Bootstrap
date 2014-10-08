@@ -1,3 +1,6 @@
+.thumb-20{
+	@include thumb(20px);
+}
 .thumb-40{
 	@include thumb(40px);
 }
