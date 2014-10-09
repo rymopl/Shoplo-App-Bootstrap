@@ -11,7 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
     <div class="app-wrap">
@@ -96,6 +95,19 @@
 	                                    	<div class="pull-right">
 	                                        <input type="checkbox" name="active" checked="checked" id="active">
 	                                        <label for="active"></label>
+	                                        </div>
+	                                    </div>
+                                	</div>
+                                </div>
+                                <div class="form-group app-span-12 app-table-td">
+                                	<div class="app-row">
+	                                    <label for="active" class="app-span-7">Kolor</label>
+	                                    <div class="checkbox app-span-5">
+	                                    	<div class="pull-right">
+	                                    		<div class="input-group demo2">
+	                                    		<span class="input-group-addon"><i></i></span>
+	                                       		<input type="text" value="" class="form-control" />
+	                                       		</div>
 	                                        </div>
 	                                    </div>
                                 	</div>
@@ -297,5 +309,13 @@
 	
 </div>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/vendor/colorpicker.js"></script>
+<script>
+    $(function(){
+        $('.demo2').colorpicker();
+        console.log('jestes w dupie')
+    });
+</script>
 </body>
 </html>

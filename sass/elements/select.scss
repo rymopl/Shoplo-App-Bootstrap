@@ -25,7 +25,7 @@
 }
 .app-select{
 	position: relative;
-
+	display: inline-block;
 	&.select-max{
 		min-width: 100%;
 		.select-primary{

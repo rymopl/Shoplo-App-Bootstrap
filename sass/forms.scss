@@ -1,0 +1,72 @@
+.form-group{
+	font-size: $font-size-base;
+	margin-bottom: 15px;
+	label{
+		font-weight: 700;
+		@include font-size(14);
+		margin-bottom: 5px;
+	}
+	.form-control{
+		border: 1px solid $gray-light;
+		height: 34px;
+		padding: 4px 6px 3px;
+		width: 100%;
+		height: 33px;
+		line-height: 24px;
+		@include radius(2);
+		color: #484b58;
+		&.error{
+			color: $red;
+			background: lighten($red,32%);
+			border-color:$red;
+		}
+	}
+	textarea.form-control{
+		height: auto;
+	}
+}
+.horizontal-form{
+	.form-group{
+		@include clearfix();
+		label{
+			padding-top: 7.5px;
+		}
+	}
+	
+}
+.checkbox label,radio label{
+	font-weight: 600;
+	font-size: $font-size-base;
+	cursor: pointer;
+	display: inline;
+	text-transform: none;
+}
+.app-table-look{
+	.form-group{
+		margin: 0;
+	}
+}
+.confirm-form{
+	padding: 30px;
+	background: $dark-blue;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	a,button{
+		margin-right: 7px;
+	}
+	.btn{
+		font-weight: 700;
+	}
+}
+.bordered-field{
+	padding:10px;
+	background: $children-bg;
+	border: 1px solid $gray-light;
+	@include radius(2);
+	input{
+		text-transform: uppercase;
+		font-size:$font-size-xsmall;
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,67 @@
+.btn{
+	@include radius(2);
+	border: 0;
+	color: $light;
+	@include font-size(11);
+	font-weight: 600;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 22px;
+	padding: 6px 17px;
+	@include transition(0.2s);
+	display: inline-block;
+	&.btn-lg{
+		padding: 10px 20px;
+		font-size: 12px;
+	}
+	&.btn-sm{
+		padding: 4px 14px;
+	}
+	&.btn-primary{
+		background: $gray-dark;
+		&:hover{
+			background: lighten($gray-dark,7%);
+		}
+	}
+	&.btn-success{
+		color: $gray-dark;
+		background: $green-light;
+		&:hover{
+			background: lighten($green-light,7%);
+		}
+	}
+	&.btn-info{
+		color: $gray-dark;
+		background: $blue;
+		&:hover{
+			background: lighten($blue,7%);
+		}
+	}
+	&.btn-warning{
+		background: $red;
+		&:hover{
+			background: lighten($red,7%);
+		}
+	}
+	&.btn-pending{
+		background: $gray-light-2;
+		color: $light;
+		&:hover{
+			background: lighten($gray-light-2,7%);
+		}
+		
+	}
+	&.btn-success-light{
+		background: $green-light;
+		color: $light;
+		&:hover{
+			background: #DAE7A6;
+		}
+	}
+	&.btn-disable{
+		opacity: 0.5;
+	}
+	&.btn-icon{
+		padding: 6px 10px;
+	}
+}

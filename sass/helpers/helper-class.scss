@@ -41,3 +41,9 @@
 .clearfix{
 	@include clearfix();
 }
+
+//class mostly for options elements
+.wd100{
+	width: 100%;
+	max-width: 100%;
+}
