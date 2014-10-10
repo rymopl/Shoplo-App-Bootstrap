@@ -26,3 +26,11 @@
 		}
 	}
 }
+.notification{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&.error{
+		background:$red;
+		color: $light;
+	}
+}
