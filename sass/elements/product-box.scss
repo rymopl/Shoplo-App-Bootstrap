@@ -1,17 +1,67 @@
 .product-box{
-	padding: 15px;
+	padding: 10px;
 	border: 1px solid $gray-light;
-	min-height: 260px;
-	margin-bottom: 15px;
+	width: 202px;
+	height: 202px;
+	margin:0 10px 20px 10px;
+	text-align: center;
+	position: relative;
+	float: left;
+	[class*="thumb"]{margin: auto;margin-top: 20px}
 	img{
 		max-height: 150px;
-		max-width: 150px;
+		max-width: 100%;
 		display: block;
 		margin: 0 auto 15px;
 	}
-	p{
-		font-size: $font-size-xsmall;
+	.meta{
+		@include font-size(9);
 		text-transform: uppercase;
-		margin: 10px auto 0;
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0 10px 10px 10px;
+		color: #999;
+	}
+	.delete{
+		position: absolute;
+		top:7px;
+		right: 6px;
+		@include font-size(18);
+		line-height: 1em;
+		z-index: 2;
+		color: rgba(0,0,0,.3);
+		cursor: pointer;
+		@include transition(0.2s);
+		
+	}
+	.handle{
+		visibility: hidden;
+		opacity: 0;
+		border: 1px solid #f5f6f8;
+		border-size:0 1px 1px 0;
+		padding: 7px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include transition(0.2s);
+		cursor: move;
+		span{
+			height: 18px;
+			width: 11px;
+			display: block;
+			background: url(../img/handle.png);
+			background-size: 7px;
+		}
+	}
+	&:hover{
+		.delete{
+			color: rgba(0,0,0,1);
+		}
+		.handle{
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 }

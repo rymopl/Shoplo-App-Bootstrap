@@ -15,7 +15,7 @@
 	@include radius(2);
 	display: block;
 	img{
-		max-width: $w;
+		max-width: 100%;
 		max-height: $w;
 		vertical-align: middle;
 	}
