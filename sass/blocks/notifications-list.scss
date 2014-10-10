@@ -29,8 +29,17 @@
 .notification{
 	padding-top: 10px;
 	padding-bottom: 10px;
+	p{
+		margin: 0;
+	}
 	&.error{
-		background:$red;
+		background:$color-error;
 		color: $light;
+	}
+	&.success{
+		color: $color-success;
+	}
+	&.info{
+		color:$color-info;
 	}
 }
