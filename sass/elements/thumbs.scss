@@ -4,6 +4,9 @@
 .thumb-40{
 	@include thumb(40px);
 }
+.thumb-50{
+	@include thumb(50px);
+}
 .thumb-60{
 	@include thumb(60px);
 }
