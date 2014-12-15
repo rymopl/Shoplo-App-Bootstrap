@@ -186,6 +186,35 @@
 		</table>
 
 	</div>
+	<div class="app-row">
+            <div class="app-span-12 actions-bar active">
+                <form action="{reverse_url name=paczkomaty_package_action}" method="post" id="actionBar" class="hidden form-group">
+                    <input type="hidden" name="items" value="[]" />
+                    <div class="actions">
+                        <span class="count"></span>
+                        <div class="app-select pull-left">
+                             <select name="action" class="noselectmenu select-primary" id="actionBarActions">
+                               <option value="" data-type="*">-- {_choose} --</option>
+                               <option value="send" data-type="order">{_send_packs}</option>
+                               <option value="sticker" data-type="order">{_get_stickers}</option>
+                               <option value="print" data-type="order">{_get_confirm_print}</option>
+                               {*<option value="label-confirm" data-type="order">Pobierz potwierdzenia nadania paczek</option>*}
+                           </select>
+                        </div>
+                          
+
+                        <div class="actionType typeChangePrice pull-left pd-left-10 pd-right-10">
+                            <input type="text" class="form-control" placeholder="{_new_price}" name="actionBarPrice" />
+                        </div>
+
+                        <button type="submit" id="submitActionBar" class="button orange bold btn btn-success pull-left">
+                            <span class="glyphicon icon-checked"></span> {_save}
+                        </button>
+                    </div>
+                    <a href="#" class="closeButton pull-right"><span class="glyphicon icon-ex"></span></a>
+                </form>
+            </div>
+        </div>
 </div>
 </div>
 </body>

@@ -1,69 +1,74 @@
-#instockReminderButton{
-	text-transform: uppercase;
-	font-weight: bold;
-	position: fixed;
-	z-index: 9999;
-	line-height: 40px;
-	height: 40px;
-	width: 200px;
-	background: #DC6763;
-	text-align: center;
-	p{
-		margin: 0;
-		display: inline-block;
-		color: #fff;
-		vertical-align: middle;
-		font-family: 'Helvetica','Arial','Tahoma',sans-serif;
-		font-size: 12px;
-		&:hover{
-			cursor: pointer;
-			opacity: 0.8;
+#instockReminderButtonTest {
+position: relative;
+min-height: 250px;
+
+	#instockReminderButton{
+		text-transform: uppercase;
+		font-weight: bold;
+		position: absolute;
+		z-index: 9999;
+		line-height: 40px;
+		height: 40px;
+		width: 200px;
+		background: #DC6763;
+		text-align: center;
+		p{
+			margin: 0;
+			display: inline-block;
+			color: #fff;
+			vertical-align: middle;
+			font-family: 'Helvetica','Arial','Tahoma',sans-serif;
+			font-size: 12px;
+			&:hover{
+				cursor: pointer;
+				opacity: 0.8;
+			}
 		}
-	}
-	&.reminder-btn-left{
-		left: 0;
-		top:50%;
-		-ms-transform: rotate(90deg) translate(-50%, -100%) ; /* IE 9 */
-		-webkit-transform: rotate(90deg) translate(-50%, -100%) ; /* Chrome, Safari, Opera */
-		transform: rotate(90deg)  translate(-50%, -100%) ;
-		-webkit-transform-origin: top left;
-		-ms-transform-origin: top left;
-		transform-origin: top left;
+		&.reminder-btn-left{
+			left: 0;
+			top:50%;
+			-ms-transform: rotate(90deg) translate(-50%, -100%) ; /* IE 9 */
+			-webkit-transform: rotate(90deg) translate(-50%, -100%) ; /* Chrome, Safari, Opera */
+			transform: rotate(90deg)  translate(-50%, -100%) ;
+			-webkit-transform-origin: top left;
+			-ms-transform-origin: top left;
+			transform-origin: top left;
+			
+				border-radius:5px 5px 0 0;
+			
+		}
 		
+		&.reminder-btn-right{
+			right: 0;
+			top:50%;
+			-ms-transform: rotate(-90deg) translate(50%, -100%) ; /* IE 9 */
+			-webkit-transform: rotate(-90deg) translate(50%, -100%) ; /* Chrome, Safari, Opera */
+			transform: rotate(-90deg)  translate(50%, -100%) ;
+			-webkit-transform-origin: top right;
+			-ms-transform-origin: top right;
+			transform-origin: top right;
 			border-radius:5px 5px 0 0;
+		}
+		&.reminder-btn-top-right{
+			right: 20px;
+			top:0;
+			border-radius: 0 0 5px 5px;
+		}
+		&.reminder-btn-top-left{
+			left: 20px;
+			top:0;
+			border-radius: 0 0 5px 5px;
+		}
+		&.reminder-btn-bottom-right{
+			right: 20px;
+			bottom:0;
+			border-radius: 5px 5px 0 0;
+		}
+		&.reminder-btn-bottom-left{
+			left: 20px;
+			bottom:0;
+			border-radius: 5px 5px 0 0;
+		}
 		
 	}
-	
-	&.reminder-btn-right{
-		right: 0;
-		top:50%;
-		-ms-transform: rotate(-90deg) translate(50%, -100%) ; /* IE 9 */
-		-webkit-transform: rotate(-90deg) translate(50%, -100%) ; /* Chrome, Safari, Opera */
-		transform: rotate(-90deg)  translate(50%, -100%) ;
-		-webkit-transform-origin: top right;
-		-ms-transform-origin: top right;
-		transform-origin: top right;
-		border-radius:5px 5px 0 0;
-	}
-	&.reminder-btn-top-right{
-		right: 20px;
-		top:0;
-		border-radius: 0 0 5px 5px;
-	}
-	&.reminder-btn-top-left{
-		left: 20px;
-		top:0;
-		border-radius: 0 0 5px 5px;
-	}
-	&.reminder-btn-bottom-right{
-		right: 20px;
-		bottom:0;
-		border-radius: 5px 5px 0 0;
-	}
-	&.reminder-btn-bottom-left{
-		left: 20px;
-		bottom:0;
-		border-radius: 5px 5px 0 0;
-	}
-	
 }

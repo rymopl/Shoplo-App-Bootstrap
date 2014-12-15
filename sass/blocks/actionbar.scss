@@ -1,0 +1,47 @@
+/* action bar */
+.actions-bar.active {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	display: block;
+}
+.actions-bar {
+	display: none;
+	padding: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: bottom 0.2s,opacity 0.2s;
+	-moz-transition: bottom 0.2s,opacity 0.2s;
+	-ms-transition: bottom 0.2s,opacity 0.2s;
+	-o-transition: bottom 0.2s,opacity 0.2s;
+	transition: bottom 0.2s,opacity 0.2s;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 10;
+	bottom: 0;
+	width: -webkit-calc(100% - 230px);
+	width: -moz-calc(100% - 230px);
+	width: calc(100% - 230px);
+	position: fixed;
+	background-color: #ffffdb;
+	color: #333;
+	font-weight: bold;
+}
+.actions-bar .form-control {
+	height: 34px;
+}
+
+#actionBar .actions {line-height: 30px;}
+
+.closeButton {
+	font-size: 20px;
+	margin: 8px 0 0 0;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	color: #333;
+}
+.closeButton:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}

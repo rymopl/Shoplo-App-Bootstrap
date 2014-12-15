@@ -21,6 +21,7 @@
 @import 'blocks/list';
 @import 'blocks/navigation';
 @import 'blocks/autocomplete';
+@import 'blocks/actionbar';
 //elements
 @import 'elements/table-look';
 @import 'elements/product-box';
@@ -30,9 +31,9 @@
 @import 'elements/alerts';
 @import 'elements/buttons';
 
-
-//@import 'vendor/remodal';
-//@import 'vendor/colorpicker';
+@import 'elements/jq-slider';
+@import 'vendor/remodal';
+@import 'vendor/colorpicker';
 //helper Classes
 @import 'helpers/helper-class';
 @import 'helpers/margins';
@@ -41,3 +42,6 @@
 //for demo purpose
 @import 'demo/demo';
 @import 'demo/header';
+
+//apps
+@import 'apps/instockreminder/buttons.scss';

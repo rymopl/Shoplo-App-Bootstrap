@@ -19,6 +19,11 @@
 				padding-bottom: 0;
 			}
 		}
+		.stats {
+			.app-table-td {
+			border-bottom: 0;
+			}
+		}
 	}
 	.app-table-horizontal{
 		.app-table-td:first-child{

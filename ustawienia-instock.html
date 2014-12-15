@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jq.ui.css">
+    </head>
+    <body>
+    <div class="app-wrap">
+    <div id="leftMenu">
+		<nav>
+			<ul class="clearfix">
+				<li><a href="index.html"><span></span>Typography</a></li>
+				<li><a href="grid.html"><span class="php"></span>Grid</a></li>
+				<li><a href="buttons.html">Buttons</a></li>
+				<li><a href="forms.html">Forms</a></li>
+				<li><a href="tables.html">Tables</a></li>
+				<li><a href="historia.html">Historia</a></li>
+				<li><a href="opcje.html">Opcje</a></li>
+				<li><a href="lista.html">Lista</a></li>
+				<li><a href="przesylka.html">Przesylka</a></li>
+				<li><a href="przesylka-ustawienia.html">Przesylka2</a></li>
+				<li><a href="start.html">Strona powitalna</a></li>
+				<li><a href="sharedstock.html">Sharedstock step 1</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+<div id="step1" class="app-container">
+    <div class="app-row">
+        <header class="page-header app-span-12">
+            <div class="app-row">
+                <div class="app-span-12 page-title">
+                    <h1>Konfiguracja wyglądu okna popup</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <form method="post" action="http://instockreminder.shoploapp.com/widget">
+
+        <div class="app-span-12 ">
+
+
+        <div class="app-row">
+
+            <div class="app-row app-table-look">
+                <div class="app-span-12 app-table-tr">
+                    <div class="app-row">
+                        <div class="app-span-3 section-header">
+                            <h2 class="">Ustawienia okna popup</h2>
+                            <p>Okno, w którym klient zapisuje się do listy oczekujących</p>
+                        </div>
+                        <div class="app-span-9 horizontal-form">
+                            <div class="app-row">
+
+                            <div class="form-group app-span-12 app-table-td">
+                                <div class="app-row">
+                                    <label class="app-span-6" for="priceSync">Nagłówek okna</label>
+                                    <div class="app-span-6">
+
+                                        <input type="text" id="popupTitle" name="popupTitle" class="form-control popup-control" value="Wyślij wiadomość gdy produkt pojawi się na stanie">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group app-span-12 app-table-td">
+                                <div class="app-row">
+                                    <label class="app-span-6" for="priceSync">Treść okna</label>
+                                    <div class="app-span-6">
+
+                                        <textarea rows="4" cols="30" name="popupContent" id="popupContent" class="form-control popup-control">Wybierz swój wariant i podaj adres email a powiadomimy Cię gdy pojawi się na stanie</textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Kolor tła</label>
+                                        <div class="app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="popupBackground" name="popupBackground" class="form-control popup-control" value="#e8bfbf"><a href="" class="color_picker" style="background-color: rgb(232, 191, 191);">&nbsp;</a><a style="background-color: rgb(232, 191, 191);"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Kolor ramki</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="borderColor" name="borderColor" class="form-control popup-control" value="#e8bfbf"><a href="" class="color_picker" style="background-color: rgb(232, 191, 191);">&nbsp;</a><a style="background-color: rgb(232, 191, 191);"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Rozmiar ramki</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+                                                <div id="borderSize" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                    <a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 40%;"></a>
+                                                </div>
+                                                <input class="slider-value" type="text" name="borderSize" id="borderSizeValue" value-without-px="2" value="2px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Zaokrąglenie ramki</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+                                                <div id="borderRound" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                    <a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 26.6666666666667%;"></a>
+                                                </div>
+                                                <input class="slider-value popup-control" readonly="readonly" type="text" name="borderRound" id="borderRoundValue" value-without-px="8" value="8px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-6" for="priceSync">Typ ramki</label>
+                                        <div class=" app-span-2">
+                                            <div class="pull-right">
+                                                <div class="radio">
+
+                                                        <input id="auto" type="radio" name="borderType" value="auto" class="form-control popup-control">
+                                                    <label for="auto">Auto</label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="dashed" type="radio" name="borderType" value="dashed" class="form-control popup-control">
+                                                     <label for="dashed">Dashed</label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="inset" type="radio" name="borderType" value="inset" class="form-control popup-control">
+                                                     <label for="inset">Inset</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class=" app-span-2">
+                                            <div class="pull-right">
+                                                <div class="radio">
+                                                        <input id="solid" type="radio" checked="checked" name="borderType" value="solid" class="form-control popup-control">
+                                                    <label for="solid">Solid</label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="groove" type="radio" name="borderType" value="groove" class="form-control popup-control">
+                                                    <label for="groove">Groove</label>
+                                                </div>
+                                                <div class="radio">
+                                                        <input id="outset" type="radio" name="borderType" value="outset" class="form-control popup-control">
+                                                        <label for="outset">Outset</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" app-span-2">
+                                            <div class="pull-right">
+
+                                                <div class="radio">
+
+                                                        <input id="dotted" type="radio" name="borderType" value="dotted" class="form-control popup-control">
+                                                    <label for="dotted">Dotted</label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="ridge" type="radio" name="borderType" value="ridge" class="form-control popup-control">
+                                                    <label for="ridge">Ridge</label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="none" type="radio" name="borderType" value="none" class="form-control popup-control">
+                                                    <label for="none">None</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Kolor czcionki</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="fontColor" name="fontColor" class="form-control" value="#000000"><a href="" class="color_picker" style="background-color: rgb(0, 0, 0);">&nbsp;</a><a style="background-color: rgb(0, 0, 0);"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-6" for="priceSync">Czionka</label>
+                                        <div class=" app-span-2">
+                                            <div class="pull-right">
+                                                <div class="radio">
+
+                                                        <input id="f1" type="radio" name="font" value="auto" checked="checked" class="form-control">
+                                                        <label for="f1">Domyślna
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="f2" type="radio" name="font" value="georgia" class="form-control"><label for="f2">Georgia
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="f3" type="radio" name="font" value="times roman" class="form-control">
+                                                        <label for="f3">Times Roman
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class=" app-span-2">
+                                            <div class="pull-right">
+                                                <div class="radio">
+
+                                                        <input id="f4" type="radio" name="font" value="arial" class="form-control">
+                                                        <label for="f4">Arial
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="f5" type="radio" checked="checked" name="font" value="sans-serif" class="form-control"><label for="f5">Sans-serif
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="f6" type="radio" name="font" value="open sans" class="form-control"><label for="f6">Open Sans
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" app-span-2">
+                                            <div class="pull-right">
+
+                                                <div class="radio">
+
+                                                        <input id="f7" type="radio" name="font" value="helvetica" class="form-control"><label for="f7">Helvetica
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="f8" type="radio" name="font" value="tahoma" class="form-control"><label for="f8">Tahoma
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+
+                                                        <input id="f9" type="radio" name="font" value="verdana" class="form-control"><label for="f9">Verdana
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Rozmiar czcionki</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+                                                <div id="fontSize" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                    <a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 22.7272727272727%;"></a>
+                                                </div>
+                                                <input class="slider-value" readonly="readonly" type="text" name="fontSize" id="fontSizeValue" value-without-px="13" value="13px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Tło przycisku</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="modalBtnColor" name="modalBtnColor" class="form-control" value="#000000"><a href="" class="color_picker" style="background-color: rgb(0, 0, 0);">&nbsp;</a><a style="background-color: rgb(0, 0, 0);"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Kolor czcionki przycisku</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="modalBtnFontColor" name="modalBtnFontColor" class="form-control" value="#e8bfbf"><a href="" class="color_picker" style="background-color: rgb(232, 191, 191);">&nbsp;</a><a style="background-color: rgb(232, 191, 191);"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="app-span-12 app-table-tr">
+
+                    <div class="app-row">
+                        <div class="app-span-3 section-header">
+                            <h2 class="">Podgląd okna</h2>
+
+                        </div>
+                        <div class="app-span-9 horizontal-form">
+                            <div class="app-row">
+
+                                <div id="modalPreview" class="form-group app-span-12 app-table-td">
+
+                                    <div id="testModal" style="border: 2px solid rgb(232, 191, 191); border-radius: 8px; color: rgb(0, 0, 0); font-family: 'open sans'; background: rgb(232, 191, 191);">
+                                        <a href="#" class="remodal-close"></a>
+                                        <h1>Wyślij wiadomość gdy produkt pojawi się na stanie</h1>
+                                        <p style="font-size: 13px;">Wybierz swój wariant i podaj adres email a powiadomimy Cię gdy pojawi się na stanie</p>
+                                        <div id="modalSection" class="clearfix">
+                                            <div id="modalProductPhoto">
+                                                <img style="max-width: 100px;" src="http://instockreminder.shoploapp.com/img/keepcup.jpg" alt="">
+                                            </div>
+                                            <div id="modalProductAction">
+
+                                                    <div class="modal-form-group">
+                                                        <label for="modalVariant">Wybierz wariant</label>
+                                                        <select name="" id="modalVariant">
+                                                            <option value="">Warian 1</option>
+                                                            <option value="">Warian 1</option>
+                                                            <option value="">Warian 1</option>
+                                                            <option value="">Warian 1</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="modal-form-group">
+                                                        <label for="modalEmail">Twój email</label>
+                                                        <input id="modalEmail" type="email" placeholder="podaj swój adres">
+                                                    </div>
+                                                    <div class="modal-form-group">
+                                                        <label for="modalVariant">Określ ile dni możesz zaczekać na produkt</label>
+                                                        <select name="" id="wait">
+                                                            <option value="1">1</option>
+                                                            <option value="3">3</option>
+                                                            <option value="5">5</option>
+                                                            <option value="7">7</option>
+                                                            <option value="14">14</option>
+                                                        </select>
+                                                    </div>
+                                                    <button type="submit" style="color: rgb(232, 191, 191); background: rgb(0, 0, 0);">Zapisz mnie</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="app-span-12 app-table-tr">
+
+                    <div class="app-row">
+                        <div class="app-span-3 section-header">
+                            <h2 class="">Ustawienia przycisku</h2>
+                            <p>Przycisk po kliknięciu którego pokaże się okno zapisania się do listy oczekujących</p>
+                        </div>
+                        <div class="app-span-9 horizontal-form">
+                            <div class="app-row">
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Tytuł</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+
+                                                <input class="form-control" type="text" name="btnTitle" id="btnTitle" value="Powiadom mnie o produkcie">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Kolor tła</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="btnBackground" name="btnBackground" class="form-control" value="#000000"><a href="" class="color_picker" style="background-color: rgb(0, 0, 0);">&nbsp;</a><a style="background-color: rgb(0, 0, 0);"></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Kolor czcionki</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right color_picker_container">
+                                                <input type="text" id="btnFontColor" name="btnFontColor" class="form-control" value="#e8bfbf"><a href="" class="color_picker" style="background-color: rgb(232, 191, 191);">&nbsp;</a><a style="background-color: rgb(232, 191, 191);"></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Szerokość</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+                                                <div id="btnWidth" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                    <a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 40.5555555555556%;"></a>
+                                                </div>
+                                                <input class="slider-value" readonly="readonly" type="text" name="btnWidth" id="btnWidthValue" value-without-px="93" value="93px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Wysokość</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+                                                <div id="btnHeight" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                                                    <a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 27.7777777777778%;"></a>
+                                                </div>
+                                                <input class="slider-value" readonly="readonly" type="text" name="btnHeight" id="btnHeightValue" value-without-px="70" value="70px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group app-span-12 app-table-td">
+                                    <div class="app-row">
+                                        <label class="app-span-8" for="priceSync">Pozycja</label>
+                                        <div class=" app-span-4">
+                                            <div class="pull-right">
+
+                                                <select class="form-control" name="btnPosition" id="btnPosition">
+                                                    <option value="reminder-btn-top-right">Prawy Górny</option>
+                                                    <option selected="selected" value="reminder-btn-right">Prawy Środek</option>
+                                                    <option value="reminder-btn-bottom-right">Prawy Dolny</option>
+                                                    <option value="reminder-btn-top-left">Lewy Górny</option>
+                                                    <option value="reminder-btn-left">Lewy Środek</option>
+                                                    <option value="reminder-btn-bottom-left">Lewy Dolny</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="app-span-12 app-table-tr">
+
+                    <div class="app-row">
+                        <div class="app-span-3 section-header">
+                            <h2 class="">Podgląd przycisku</h2>
+                            <p>Przycisk po kliknięciu którego pokaże się okno zapisania się do listy oczekujących</p>
+                        </div>
+                        <div class="app-span-9 horizontal-form">
+                            <div class="app-row">
+                                <div id="instockReminderButtonTest" class="app-sapn-12 app-table-td">
+                                    <div id="instockReminderButton" class="reminder-btn-right" style="width: 93px; height: 70px; line-height: 70px; background: rgb(0, 0, 0);"><p style="color: rgb(232, 191, 191);">Powiadom mnie o produkcie</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="app-row">
+        <div class="app-span-12 confirm-form">
+            <input type="hidden" name="referer" value="#pending">
+            <input id="stepBtn" type="submit" value="Dalej »" class="btn btn-warning hide">
+            <button id="menuBtn" type="submit" class="btn btn-success"><span class="glyphicon icon-checked"></span>Zapisz</button>
+            <a class="btn btn-warning menuBtn" href="http://instockreminder.shoploapp.com/pending"><span class="glyphicon icon-ex"></span>Anuluj</a>
+        </div>
+    </div>
+
+    </form>
+
+</div>	
+	
+</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.shoploapp.com/js/colorpicker-2096526.js"></script>
+<script src="js/instockreminder.js"></script>
+<script>
+    $(function(){
+        $('.demo2').colorpicker();
+        console.log('jestes w dupie')
+    });
+</script>
+</body>
+</html>
