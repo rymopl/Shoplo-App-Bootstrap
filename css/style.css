@@ -833,10 +833,8 @@ a, a:hover {
   text-transform: none;
   line-height: 1;
   /* Not compatible with Shoplo panel */
-  /*
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
-  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .glyphicon.icon-refresh, .page-header .icon-refresh.search-form:before {
   font-family: 'shoplo2' !important;
@@ -1778,6 +1776,8 @@ ul.unstyled {
   position: relative;
   text-transform: lowercase;
   top: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .checkbox input[type=checkbox]:checked + label:before {
   color: #333333;

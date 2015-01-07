@@ -16,6 +16,8 @@
 	    position: relative;
 	    text-transform: lowercase;
 	    top:2px;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
     }  
 	input[type=checkbox]:checked + label:before {  
 		color: $gray;
